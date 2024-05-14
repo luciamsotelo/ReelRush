@@ -6,7 +6,7 @@ function DarkVariantExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6OpoLLQ_45XdyKUc6cbDEnrWtoJVHm2v2qqIJP4HUTA&s"
+          src="https://plus.unsplash.com/premium_photo-1661891469578-7fd063fe8b65?q=80&w=1195&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -17,7 +17,7 @@ function DarkVariantExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=eee"
+          src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -28,7 +28,7 @@ function DarkVariantExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=e5e5e5"
+          src="https://hellscanyon.tours/wp-content/uploads/2023/01/RiverAdventuresInc-214207-Pieces-Fishing-Equipment-blogbanner1-1080x675.jpg"
           alt="Third slide"
         />
         <Carousel.Caption>

@@ -3,7 +3,15 @@ import Button from 'react-bootstrap/Button';
 
 function FormGroupExample() {
   return (
-    <Form className='' style={{padding: '100px'}}>
+    
+    <div style={{
+      backgroundImage: 'url("")', 
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      padding: '20px',
+      textAlign: 'justify',
+    }}>
+    <Form className=''>
       <Form.Group className="mb-3" controlId="formGroupEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
@@ -14,6 +22,7 @@ function FormGroupExample() {
       </Form.Group>
       <Button variant="info">Cast Away</Button>
     </Form>
+    </div>
   );
 }
 

@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 function FormGroupExample() {
   return (
-    <Form className='' style={{padding: '100px'}}>
+    <Form className='' style={{padding: '20px'}}>
       <Form.Group className="mb-3" controlId="formFirstName">
         <Form.Label>First Name</Form.Label>
         <Form.Control type="text" placeholder="Enter your first name" />

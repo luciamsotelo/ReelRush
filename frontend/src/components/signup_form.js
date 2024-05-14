@@ -1,27 +1,31 @@
-import Col from 'react-bootstrap/Col';
+import React from 'react';
 import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
 
-function GridBasicExample() {
+function FormGroupExample() {
   return (
-    <Form>
-      <Row>
-        <Col>
-          <Form.Control placeholder="First name" />
-        </Col>
-        <Col>
-          <Form.Control placeholder="Last name" />
-        </Col>
-      </Row>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+    <Form className='' style={{padding: '100px'}}>
+      <Form.Group className="mb-3" controlId="formFirstName">
+        <Form.Label>First Name</Form.Label>
+        <Form.Control type="text" placeholder="Enter your first name" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formLastName">
+        <Form.Label>Last Name</Form.Label>
+        <Form.Control type="text" placeholder="Enter your last name" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formGroupEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
       </Form.Group>
+      <Form.Group className="mb-3" controlId="formGroupPassword">
+        <Form.Label>Password</Form.Label>
+        <Form.Control type="password" placeholder="Password" />
+      </Form.Group>
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
     </Form>
   );
 }
 
-export default GridBasicExample;
+export default FormGroupExample;

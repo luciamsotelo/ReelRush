@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 
 function FormButtons() {
   return (
-    <>
+    <div className='d-flex justify-content-left' style={{padding: '10px'}}>
       <Link to="/castIn">
-        <Button variant="outline-secondary">Cast In</Button>
+        <Button variant="outline-secondary" className="mr-auto" style={{marginRight: '25px'}}>Cast In</Button>
       </Link>{' '}
       <Link to="/hookUp">
         <Button variant="outline-secondary">Hook Up</Button>
       </Link>{' '}
-    </>
+    </div>
   );
 }
 

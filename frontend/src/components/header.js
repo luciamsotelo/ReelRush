@@ -6,12 +6,13 @@ import Container from 'react-bootstrap/Container';
 
 function Header() {
   return (
-    <Navbar className='' style={{background: '#d7e5f0'}}>
+    <Navbar className='' style={{background: '#d7e5f0', paddingTop: '40px'}}>
       <Container className=''>
         <Link to="/">
-          <Button variant="outline-primary" className="mr-auto">Home</Button>
+        <i className="fas fa-anchor" style={{fontSize: '24px', color: '#007bff', marginRight: '10px'}}></i>
+          <Button variant="outline-primary" className="mr-auto">Dock</Button>
         </Link>
-        <h1 className='mr-auto' style={{color: 'red', fontSize: '50px', fontFamily: 't'}}>A Reel Rush</h1>
+        <h1 className='mr-auto' style={{color: 'black', fontSize: '50px', fontFamily: 'fantasy'}}>A Reel Rush</h1>
         <Link to="/flyFinder">
         <Button variant="outline-primary">Fly-Finder</Button>
         </Link>

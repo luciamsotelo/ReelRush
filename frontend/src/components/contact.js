@@ -5,7 +5,7 @@ const Contact = () => (
   <Container style={{ padding: '50px 0' }}>
     <h2 className="text-center mb-5">Contact Us</h2>
     <Row>
-      <Col md={6} className="mb-4">
+      <Col md={6} className="mb-4" style={{border: '10px solid #ccc', padding: '20px'}}>
         <h4>Get in Touch</h4>
         <p>If you have any questions, feel free to reach out to us. We're here to help!</p>
         <p><strong>Address:</strong> San Diego, CA</p>

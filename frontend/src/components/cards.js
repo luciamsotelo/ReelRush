@@ -9,8 +9,8 @@ function GridExample() {
   // Array of objects containing card information
   const cardsData = [
     {
-      image: 'https://www.pierfishing.com/wp-content/uploads/2017/03/IBP_2007_Pier6.jpg',
-      title: 'Imperial Beach',
+      image: '/images/flychartruse.jpeg',
+      title: 'Fly Chartruse',
       text: 'Known for its serene beauty and stunning sunsets, Imperial Beach offers wide stretches of golden sand, perfect for leisurely walks and picnics. It is a tranquil escape, ideal for those seeking relaxation away from the crowds.',
       link: '/imperial'
     },

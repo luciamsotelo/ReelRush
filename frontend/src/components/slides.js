@@ -4,43 +4,67 @@ import { Container } from 'react-bootstrap';
 function DarkVariantExample() {
   return (
     <Container fluid>
-      <Carousel data-bs-theme="dark" style={{ margin: '10px 10px 20px 10px' }}>
-        <Carousel.Item>
+      <Carousel >
+        <Carousel.Item data-bs-theme="dark" style={{ margin: '10px 10px 20px 10px' }}>
           <img
             className="d-block w-100 img-fluid"
-            src="./images/ocean.jpeg"
-            alt="First slide"
+            src="./images/halibut.jpeg"
+            alt="halibut"
             style={{ objectFit: 'cover', maxHeight: '300px' }} // Maintain aspect ratio
           />
-          <Carousel.Caption>
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <Carousel.Caption className='bg-dark bg-opacity-25' style={{borderRadius: '100px'}}>
+            <h5 className="" style={{color:'lightblue', textShadow: '2px 2px 4px darkblue'}}>Just for the Halibut</h5>
+            <p className=''style={{color:'white', margin: '20px'}}>Nearly all halibut have both eyes on the right-hand side of the fish. About 1 in every 20,000 halibut has its eyes on the left side.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item data-bs-theme="dark" style={{ margin: '10px 10px 20px 10px' }}>
           <img
             className="d-block w-100 img-fluid"
-            src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Second slide"
+            src="./images/stingray.jpeg"
+            alt="stingray"
             style={{ objectFit: 'cover', maxHeight: '300px' }} // Maintain aspect ratio
           />
-          <Carousel.Caption>
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <Carousel.Caption className='bg-dark bg-opacity-25' style={{borderRadius: '100px'}}>
+          <h5 className="" style={{color:'lightblue', textShadow: '2px 2px 4px darkblue'}}>Ray of Sunshine</h5>
+            <p className=''style={{color:'white', margin: '20px'}}>Stingrays are mostly docile, and will rather swim away than use their stingers, which are purely for defense. However, if you startle them, they will absolutely sting you.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item data-bs-theme="dark" style={{ margin: '10px 10px 20px 10px' }}>
           <img
             className="d-block w-100 img-fluid"
-            src="https://hellscanyon.tours/wp-content/uploads/2023/01/RiverAdventuresInc-214207-Pieces-Fishing-Equipment-blogbanner1-1080x675.jpg"
-            alt="Third slide"
+            src="./images/shark.jpeg"
+            alt="shark"
             style={{ objectFit: 'cover', maxHeight: '300px' }} // Maintain aspect ratio
           />
-          <Carousel.Caption>
-            <h5>Third slide label</h5>
+          <Carousel.Caption className='bg-dark bg-opacity-25' style={{borderRadius: '100px'}}>
+            <h5 className="" style={{color:'lightblue', textShadow: '2px 2px 4px darkblue'}}>Baby Shark, doo doo doo doo doo doo</h5>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Leopard sharks are known for their oval-shaped "leopard" markings, which include dark, saddle-shaped splotches along their fins and upper body.
             </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item data-bs-theme="dark" style={{ margin: '10px 10px 20px 10px' }}>
+          <img
+            className="d-block w-100 img-fluid"
+            src="./images/barredsurfperch.jpeg"
+            alt="perch"
+            style={{ objectFit: 'cover', maxHeight: '300px' }} // Maintain aspect ratio
+          />
+          <Carousel.Caption className='bg-dark bg-opacity-25' style={{borderRadius: '100px'}}>
+            <h5 className="" style={{color:'lightblue', textShadow: '2px 2px 4px darkblue'}}>Surfing Striped Stunner Perch </h5>
+            <p>Barred surf perch are skilled hunters that thrive in coastal areas where waves crash onto sandy beaches or rocky shores. They've adapted to ride the waves and use the turbulence to their advantage when hunting for food, making them agile predators along the shoreline.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item data-bs-theme="dark" style={{ margin: '10px 10px 20px 10px' }}>
+          <img
+            className="d-block w-100 img-fluid"
+            src="./images/corbina.jpeg"
+            alt="corbina"
+            style={{ objectFit: 'cover', maxHeight: '300px' }} // Maintain aspect ratio
+          />
+          <Carousel.Caption className='bg-dark bg-opacity-25' style={{borderRadius: '100px'}}>
+            <h5 className="" style={{color:'lightblue', textShadow: '2px 2px 4px darkblue'}}>Corbina the Savvy Sand Sniffer</h5>
+            <p>Corbina are known for their strong sense of smell, which they use to locate prey buried in the sand.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

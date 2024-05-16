@@ -3,17 +3,17 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Contact = () => (
-  <Container style={{ padding: '50px 0' }}>
+  <Container style={{ padding: '20px'}}>
     <h2 className="text-center mb-5">Contact Us</h2>
     <Row>
-      <Col md={6} className="mb-4" style={{border: '10px solid #ccc', padding: '20px'}}>
+      <Col md={6} className="mb-8" style={{border: '10px solid #ccc', padding: '20px'}}>
         <h4>Get in Touch</h4>
         <p>If you have any questions, feel free to reach out to us. We're here to help!</p>
         <p><strong>Address:</strong> San Diego, CA</p>
         <p><strong>Phone:</strong> (520) 603-4075</p>
         <p><strong>Email:</strong> soteloemiliano@yahoo.com</p>
       </Col>
-      <Col md={6}>
+      <Col md={6} className='mb-8'>
         <h4>Drop us a Line</h4>
         <Form>
           <Form.Group controlId="formName" className="mb-3">

@@ -9,7 +9,7 @@ function FormButtons() {
         <Button variant="outline-secondary" className="mr-auto" style={{marginRight: '25px'}}>Cast In</Button>
       </Link>{' '}
       <Link to="/hookUp">
-        <Button variant="outline-secondary">Hook Up</Button>
+        <Button variant="outline-secondary" className="mr-auto" style={{marginRight: '25px'}}>Hook Up</Button>
       </Link>{' '}
     </div>
   );

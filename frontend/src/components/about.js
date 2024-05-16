@@ -19,7 +19,8 @@ const teamMembers = [
 
 const AboutUs = () => (
   <Container style={{ padding: '50px 0' }}>
-    <h2 className="text-center mb-5">Meet Our Team</h2>
+    <h2 className="text-center mb-5">Meet Our Fishermen</h2>
+    <p className = '' style={{textAlign: 'justify', color:'darkblue'}}>"Meet Emiliano, the driving force behind our fishing haven. Explore his expertise, adventures, and the wonders of the fishing realm. Let's cast our lines together and dive into the depths of fishing excellence!"</p>
     <Row>
       {teamMembers.map((member, index) => (
         <Col md={4} sm={6} xs={12} key={index} className="mb-4">

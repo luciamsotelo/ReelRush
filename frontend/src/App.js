@@ -6,6 +6,8 @@ import CastIn from './pages/castIn_page';
 import FlyFinder from './pages/flyfinder_page';
 import AboutUs from './pages/about_page';
 import Contact from './pages/contact_page';
+import Buy from './pages/buy_page';
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path ="/flyFinder" element={<FlyFinder/>} />
         <Route path ="/aboutUs" element={<AboutUs/>} />
         <Route path ="/contact" element={<Contact/>} />
+        <Route path ="/buy" element={<Buy/>} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Contact = () => (
   <Container style={{ padding: '50px 0' }}>
@@ -31,9 +32,10 @@ const Contact = () => (
             <Form.Label>Message</Form.Label>
             <Form.Control as="textarea" rows={5} placeholder="Enter your message" />
           </Form.Group>
+          <Link to="/flyFinder">
           <Button variant="info" type="submit">
             Submit
-          </Button>
+          </Button></Link>
         </Form>
       </Col>
     </Row>

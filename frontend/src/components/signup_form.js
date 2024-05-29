@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function FormGroupExample() {
   return (
-    <div>
+    <div className='' style={{backgroundImage: 'url(./images/ocean.jpeg)', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: '100vh'}}>
       <p className='' style={{margin: '10px', padding: '10px', textAlign: 'justify', color:'darkblue'}}>
 "Ready to explore Emiliano's world of fly tying, beach adventures, and impressive catches? Hook up now to cast in later and gain exclusive access to Emiliano's collection of fly patterns, favored fishing spots, and memorable catches. Join us on this angler's journey and unlock a world of fishing excellence!"</p>
     <Form className='' style={{padding: '20px'}}>

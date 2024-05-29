@@ -3,29 +3,33 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const teamMembers = [
   {
-    name: 'John Doe',
-    position: 'CEO',
+    name: 'Founder',
+    
     image: '/images/em1.jpeg',
-    bio: 'John has over 20 years of experience in the industry and leads the company with a vision for innovation and excellence.'
+    bio: 'Meet Emiliano Sotelo, our founder. With a vision for innovation and excellence, Emiliano leads our company forward. Join us as we explore the world of fishing through his eyes.'
   },
   {
-    name: 'Jane Smith',
-    position: 'CTO',
-    image: '/images/jane-smith.jpg',
+    name: 'Fishing Enthusiast',
+    
+    image: '/images/em2.jpeg',
     bio: 'Jane is a tech enthusiast with a passion for developing cutting-edge solutions. She oversees all technical aspects of the company.'
   },
-  // Add more team members as needed
+  {
+    name: 'Fly Tying Expert',
+    
+    image: '/images/em3.jpeg',
+    bio: 'Jane is a tech enthusiast with a passion for developing cutting-edge solutions. She oversees all technical aspects of the company.'
+  },
 ];
 
 const AboutUs = () => (
   <Container style={{ padding: '50px 0' }}>
-    <h2 className="text-center mb-5">Meet Our Fishermen</h2>
-    <p className = '' style={{textAlign: 'justify', color:'darkblue'}}>"Meet Emiliano, the driving force behind our fishing haven. Explore his expertise, adventures, and the wonders of the fishing realm. Let's cast our lines together and dive into the depths of fishing excellence!"</p>
+    <h2 className="text-center mb-5">Meet Our Fisherman Emiliano Sotelo</h2>
     <Row>
       {teamMembers.map((member, index) => (
         <Col md={4} sm={6} xs={12} key={index} className="mb-4">
-          <Card>
-            <Card.Img variant="top" src={member.image} alt={member.name} />
+          <Card style={{ height: '100%' }}>
+            <Card.Img variant="top" src={member.image} alt={member.name} style={{ objectFit: 'cover', height: '50%' }} />
             <Card.Body>
               <Card.Title>{member.name}</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">{member.position}</Card.Subtitle>

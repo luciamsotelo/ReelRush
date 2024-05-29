@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const FishingTripDetails = () => (
   <Container>
@@ -19,6 +20,9 @@ Embark on a virtual journey through Emiliano's fishing adventures. Dive into the
               The fishing fly used during the trip. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </Card.Text>
             <Button variant="info">Purchase</Button>
+            <Link to="/flyFinder">
+            <Button className="ml-2" style={{marginLeft: '20px'}} variant="info">Back</Button>
+            </Link>
           </Card.Body>
         </Card>
       </Col>

@@ -11,10 +11,16 @@ const Register = () => {
   const [password, setPassword] = useState('');
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState('');
+  const [validationError, setValidationError] = useState('');
   const navigate = useNavigate();
 
   const handleRegister = async (e) => {
     e.preventDefault();
+
+    if (!firstName || !lastName || !email || !password) {
+      setValidationError('All fields are required.');
+      return;
+    }
 
     const newUser = { firstName, lastName, email, password };
 
@@ -46,8 +52,9 @@ const Register = () => {
         "Ready to explore Emiliano's world of fly tying, beach adventures, and impressive catches? Hook up now to cast in later and gain exclusive access to Emiliano's collection of fly patterns, favored fishing spots, and memorable catches. Join us on this angler's journey and unlock a world of fishing excellence!"
       </p>
       <Form className='' style={{ padding: '20px' }} onSubmit={handleRegister}>
+        {validationError && <p style={{ color: 'red' }}>{validationError}</p>}
         <Form.Group className="mb-3" controlId="formFirstName">
-          <Form.Label>First Name</Form.Label>
+          <Form.Label className='' style={{ color: 'white' }}>First Name</Form.Label>
           <Form.Control type="text" placeholder="Enter your first name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formLastName">

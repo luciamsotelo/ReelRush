@@ -9,10 +9,16 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState('');
+  const [validationError, setValidationError] = useState('');
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
+
+    if (!email || !password) {
+      setValidationError('Both fields are required.');
+      return;
+    }
 
     const credentials = { email, password };
 
@@ -44,6 +50,7 @@ const Login = () => {
         "Ready to dive into Emiliano's world of angling expertise? Cast in now to unlock exclusive access to his collection of fly patterns, favored fishing spots, and memorable catches. Sign in today and join the adventure!"
       </p>
       <Form className='' style={{ padding: '20px' }} onSubmit={handleLogin}>
+        {validationError && <p style={{ color: 'red' }}>{validationError}</p>}
         <Form.Group className="mb-3" controlId="formGroupEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} />

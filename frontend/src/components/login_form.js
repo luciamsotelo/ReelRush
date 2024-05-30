@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import { Link, useNavigate } from 'react-router-dom';
+import Modal from 'react-bootstrap/Modal';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showModal, setShowModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState('');
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -24,8 +27,12 @@ const Login = () => {
     const result = await response.json();
 
     if (response.status === 200) {
-      alert(result.message);
-      navigate('/flyFinder'); // Redirect to the desired page after successful login
+      setModalMessage(result.message);
+      setShowModal(true);
+      setTimeout(() => {
+        setShowModal(false);
+        navigate('/flyFinder'); // Redirect to the desired page after successful login
+      }, 2000);
     } else {
       alert(result.message);
     }
@@ -49,6 +56,13 @@ const Login = () => {
           Cast Away
         </Button>
       </Form>
+
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Welcome Back!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{modalMessage}</Modal.Body>
+      </Modal>
     </div>
   );
 };

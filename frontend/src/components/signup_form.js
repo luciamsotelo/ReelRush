@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import { Link, useNavigate } from 'react-router-dom';
+import Modal from 'react-bootstrap/Modal';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showModal, setShowModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState('');
   const navigate = useNavigate();
 
   const handleRegister = async (e) => {
@@ -26,8 +29,12 @@ const Register = () => {
     const result = await response.json();
 
     if (response.status === 201) {
-      alert(result.message);
-      navigate('/castIn'); // Redirect to login or another page after successful registration
+      setModalMessage(result.message);
+      setShowModal(true);
+      setTimeout(() => {
+        setShowModal(false);
+        navigate('/castIn'); // Redirect to login or another page after successful registration
+      }, 2000);
     } else {
       alert(result.message);
     }
@@ -59,6 +66,13 @@ const Register = () => {
           Cast Away
         </Button>
       </Form>
+
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Registration Successful</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{modalMessage}</Modal.Body>
+      </Modal>
     </div>
   );
 };

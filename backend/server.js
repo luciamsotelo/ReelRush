@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const { sequelize } = require('./models'); // Import Sequelize instance
 const feedbackRoutes = require('./routes/feedbackRoutes'); // Import feedbackRoutes
 const inventoryRoutes = require('./routes/inventoryRoutes'); // Import inventoryRoutes
+const userRoutes = require('./routes/userRoutes')
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(bodyParser.json());
 // Routes for authentication and data
 app.use('/api', feedbackRoutes);
 app.use('/api', inventoryRoutes);
+app.use('/api', userRoutes)
 
 // Set the port for the server to listen on
 

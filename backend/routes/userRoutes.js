@@ -1,5 +1,5 @@
 const express = require('express');
-const bcrypt = require('../utilities/bcrypt'); // Assuming your bcrypt utilities file is in the utilities folder
+const bcrypt = require('bcrypt'); // Ensure bcrypt is imported for password comparison
 const { User } = require('../models'); // Import your User model
 
 const router = express.Router();
@@ -15,15 +15,12 @@ router.post('/register', async (req, res) => {
       return res.status(400).json({ message: 'User with this email already exists' });
     }
 
-    // Hash the password using bcrypt
-    const hashedPassword = await bcrypt.hash(password);
-
-    // Create a new user with the hashed password
+    // Create a new user (password is hashed by the model hook)
     const newUser = await User.create({
       firstName,
       lastName,
       email,
-      password: hashedPassword,
+      password,
     });
 
     return res.status(201).json({ message: 'User registered successfully', user: newUser });

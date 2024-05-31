@@ -45,7 +45,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className='' style={{ backgroundImage: 'url(./images/coronadobeach.jpeg)', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: '100vh' }}>
       <p className='' style={{ margin: '10px', padding: '10px', textAlign: 'justify', color: 'darkblue' }}>
         "Ready to dive into Emiliano's world of angling expertise? Cast in now to unlock exclusive access to his collection of fly patterns, favored fishing spots, and memorable catches. Sign in today and join the adventure!"
       </p>

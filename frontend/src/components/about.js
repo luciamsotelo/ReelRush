@@ -6,19 +6,19 @@ const teamMembers = [
     name: 'Founder',
     
     image: '/images/em1.jpeg',
-    bio: 'Meet Emiliano Sotelo, our founder. With a vision for innovation and excellence, Emiliano leads our company forward. Join us as we explore the world of fishing through his eyes.'
+    bio: 'Meet Emiliano Sotelo, our founder. With a lifelong passion for fishing and a vision for innovation and excellence, Emiliano leads our company forward. His journey from avid angler to industry leader is marked by a dedication to perfecting the art of fly tying, creating gear that blends tradition with cutting-edge techniques. Join us as we explore the world of fishing through his eyes and experience the meticulous craftsmanship and deep expertise that define our brand.'
   },
   {
     name: 'Fishing Enthusiast',
     
     image: '/images/em2.jpeg',
-    bio: 'Jane is a tech enthusiast with a passion for developing cutting-edge solutions. She oversees all technical aspects of the company.'
+    bio: 'Emiliano is a passionate fishing enthusiast who has spent countless hours perfecting his technique and sharing his love for the sport with others. Emiliano\'s expertise and enthusiasm inspire us all to cast our lines a little farther and appreciate the serenity and excitement that fishing brings.'
   },
   {
     name: 'Fly Tying Expert',
     
     image: '/images/em3.jpeg',
-    bio: 'Jane is a tech enthusiast with a passion for developing cutting-edge solutions. She oversees all technical aspects of the company.'
+    bio: 'Emiliano is a master of fly tying, a skill he has honed over many years. His intricate and innovative fly patterns are celebrated by anglers worldwide, reflecting his deep understanding of aquatic ecosystems and fish behavior. Emiliano’s expertise in fly tying is at the heart of our company, driving us to create top-quality products that enhance every fishing experience. His dedication and artistry inspire our team and community, elevating the craft of fly fishing to new heights.'
   },
 ];
 

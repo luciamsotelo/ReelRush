@@ -54,19 +54,19 @@ const Register = () => {
       <Form className='' style={{ padding: '20px' }} onSubmit={handleRegister}>
         {validationError && <p style={{ color: 'red' }}>{validationError}</p>}
         <Form.Group className="mb-3" controlId="formFirstName">
-          <Form.Label className='' style={{ color: 'white' }}>First Name</Form.Label>
+          <Form.Label className='' style={{ color: 'white', textShadow: '2px 2px 10px black' }}>First Name</Form.Label>
           <Form.Control type="text" placeholder="Enter your first name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formLastName">
-          <Form.Label>Last Name</Form.Label>
+          <Form.Label style={{ color: 'white', textShadow: '2px 2px 10px black' }}>Last Name</Form.Label>
           <Form.Control type="text" placeholder="Enter your last name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formGroupEmail">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label style={{ color: 'white', textShadow: '2px 2px 10px black' }}>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formGroupPassword">
-          <Form.Label>Password</Form.Label>
+          <Form.Label style={{ color: 'lightblue', textShadow: '2px 2px 10px black' }}>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </Form.Group>
         <Button variant="info" type="submit">

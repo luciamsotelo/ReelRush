@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 
 function DarkVariantExample() {
   return (
-    <Container fluid>
+    <Container fluid className='p-10' data-bs-theme="light">
       <Carousel>
         <Carousel.Item data-bs-theme="dark">
           <img
@@ -25,8 +25,8 @@ function DarkVariantExample() {
             style={{ objectFit: 'cover', maxHeight: '400px' }} // Increased maxHeight
           />
           <Carousel.Caption className='bg-dark bg-opacity-25' style={{borderRadius: '100px'}}>
-          <h5 className="" style={{color:'lightblue', textShadow: '2px 2px 4px darkblue'}}>Ray of Sunshine</h5>
-            <p className=''style={{color:'white', margin: '20px'}}>Stingrays are mostly docile, and will rather swim away than use their stingers, which are purely for defense. However, if you startle them, they will absolutely sting you.</p>
+          <h5 className="" style={{color:'lightblue', textShadow: '2px 2px 4px darkblue'}}>Shovel Nose Guitar Fish</h5>
+            <p className=''style={{color:'white', margin: '20px'}}>Despite their guitar-like shape, these fish are incredibly agile swimmers and often use their flattened bodies to glide gracefully along the ocean floor, hunting for prey like crustaceans and small fish.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item data-bs-theme="dark" style={{ margin: '10px 10px 20px 10px' }}>

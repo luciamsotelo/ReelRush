@@ -9,7 +9,7 @@ const FishingTripDetails = () => (
 "Welcome to the Trip Details Page!
 
 Embark on a virtual journey through Emiliano's fishing adventures. Dive into the intricate details of each trip, from the captivating flies he ties to the serene beaches he frequents and the magnificent fish he reels in. Get ready to immerse yourself in the beauty of nature and the thrill of the catch. Let's make every trip an unforgettable experience together!"</p>
-    <Row xs={1} md={3} className="g-4">
+    <Row xs={1} md={3} className="g-4" style={{ margin: '10px 10px 75px 10px'}}>
       {/* Card for describing the fishing fly used */}
       <Col>
         <Card className="h-100">

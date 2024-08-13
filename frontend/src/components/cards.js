@@ -27,14 +27,14 @@ function GridExample() {
       link: '/buy'
     },
     {
-      image: '/images/flychartruse.jpeg',
-      title: 'Fly Chartruse $15',
+      image: '/images/summerbz.jpeg',
+      title: 'Summer Breeze $15',
       text: 'information about Fly Chartruse needed here',
       link: '/buy'
     },
     {
-      image: '/images/flychartruse.jpeg',
-      title: 'Fly Chartruse $15',
+      image: '/images/lcollection.jpeg',
+      title: 'Lucia Collection $15',
       text: 'information about Fly Chartruse needed here',
       link: '/buy'
     },

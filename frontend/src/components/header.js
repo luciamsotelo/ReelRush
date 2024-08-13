@@ -12,7 +12,7 @@ function Header() {
         <i className="fas fa-anchor" style={{fontSize: '24px', color: '#007bff', marginRight: '10px'}}></i>
           <Button variant="outline-primary" className="mr-auto">Dock</Button>
         </Link>
-        <h1 className='mr-auto' style={{color: 'black', fontSize: '50px', fontFamily: 'fantasy', marginLeft: '2px', textAlign: 'center', textShadow: '2px 2px 6px #007bff'}}>A Reel Rush</h1>
+        <h1 className='mr-auto' style={{color: 'black', fontSize: '50px', fontFamily: 'Grey Qo', marginLeft: '2px', textAlign: 'center', textShadow: '2px 2px 6px #007bff'}}>A Reel Rush</h1>
         <Link to="/flyFinder">
         <Button variant="outline-primary">Fly-Finder</Button>
         </Link>
